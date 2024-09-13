@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* outline: 1px dashed red; */
+}
+
+.footer-links {
+  text-transform: uppercase;
+}
+
+.footer-links>div:not(:first-child) {
+  color: rgba(0, 0, 0, 65%);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.footer-links>div:not(:first-child):hover {
+  color: rgba(0, 0, 0, 100%);
+}
+
+.bg-jsThemeGrad {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(7, 4, 225, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.search-bar-icon {
+  fill: #fff;
+}
+
+.tag:hover .tag-svg {
+  fill: #0407e1;
+}
+
+.jobCard:hover .jobTitle {
+  text-decoration: underline;
+}
+
+a:hover>svg {
+  stroke: black;
+}
+
+.newsBg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.burger-menu {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.burger-line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.burger-menu:hover .burger-line {
+  background-color: #555;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: all 0.5s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+body.menu-shown {
+  overflow: hidden;
+}
+
+.sidebar-logo {
+  background-image: url(https://assets.jobstore.my/images/branding/jobstore_icon_blue.png);
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.fade-in-1-enter-active,
+.fade-in-1-leave-active {
+  transition: all .5s ease;
+}
+
+.fade-in-1-enter-from,
+.fade-in-1-leave-to {
+  transform: translateY(30px);
+  filter: blur(3px);
+  opacity: 0;
+}
+
+.fade-in-2-enter-active,
+.fade-in-2-leave-active {
+  transition: all .5s ease;
+}
+
+.fade-in-2-enter-from,
+.fade-in-2-leave-to {
+  transform: translateY(30px);
+  filter: blur(3px);
+  opacity: 0;
+}
+
+.fade-in-3-enter-active,
+.fade-in-3-leave-active {
+  transition: all .5s ease;
+}
+
+.fade-in-3-enter-from,
+.fade-in-3-leave-to {
+  transform: translateY(30px);
+  filter: blur(3px);
+  opacity: 0;
+}
+
+.fade-in-4-enter-active,
+.fade-in-4-leave-active {
+  transition: all .5s ease;
+}
+
+.fade-in-4-enter-from,
+.fade-in-4-leave-to {
+  transform: translateY(30px);
+  filter: blur(3px);
+  opacity: 0;
+}
+
+.fade-in-1-enter-active {
+  transition-delay: .01s;
+}
+
+.fade-in-2-enter-active {
+  transition-delay: .12s;
+}
+
+.fade-in-3-enter-active {
+  transition-delay: .23s;
+}
+
+.fade-in-4-enter-active {
+  transition-delay: .34s;
+}
